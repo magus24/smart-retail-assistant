@@ -1,0 +1,39 @@
+# ── Secrets ─────────────────────────────────────────────────────────
+.env
+*.env
+!.env.example
+
+# ── Python ──────────────────────────────────────────────────────────
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ── Node / Vite ─────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+yarn-error.log*
+
+# ── Databases ───────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Generated / test artifacts ──────────────────────────────────────
+backend/test_output.txt
+backend/test_audio.wav
+backend/tts_*.wav
+*.log
+
+# ── Duplicate asset copy (real served assets live in frontend/public/models) ──
+frontend/models/
+
+# ── OS / editor ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
